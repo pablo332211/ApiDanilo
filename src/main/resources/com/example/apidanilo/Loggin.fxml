@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apidanilo.Controller.ControllerLogin">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #05071F;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="FORUMBEE" layoutX="123.0" layoutY="210.0" size="100" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="131.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M.A.M">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="3.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONTAJES INGENIERIA Y CONSTRUCCIONES SAS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="415.0" style="-fx-background-color: #02030A;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="FieldDocumentoLogin" layoutX="88.0" layoutY="193.0" prefHeight="25.0" prefWidth="201.0" promptText="Documento" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="FieldPassLogin" layoutX="89.0" layoutY="244.0" prefHeight="25.0" prefWidth="200.0" promptText="Contraseña" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+
+            <Button fx:id="ButtonLogin" layoutX="145.0" layoutY="326.0" mnemonicParsing="false" onAction="#ButtonLogin" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #0598ff;" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="HyperLogin" layoutX="120.0" layoutY="419.0" text="Olvidaste tu contraseña" />
+
+            <Text fill="#0598ff" layoutX="148.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User login">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <FontAwesomeIcon fill="#0598ff" glyphName="USERS" layoutX="159.0" layoutY="108.0" size="45" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="62.0" layoutY="213.0" size="20" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="60.0" layoutY="264.0" size="20" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="CLOSE" layoutX="324.0" layoutY="19.0" size="15" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
